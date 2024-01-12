@@ -1,0 +1,118 @@
+$if(by-affiliation/first)$
+<div class="is-size-5 publication-authors">
+  $for(by-author)$
+  <span class="author-block">$_title-meta-author.html()$</span>
+  $endfor$
+</div>
+
+<div class="is-size-5 publication-authors">
+  <span class="author-block">$for(by-affiliation)$<sup>$it.id$</sup>$it.name$$sep$, $endfor$</span>
+</div>
+$endif$
+
+<div class="quarto-title-meta">
+
+  $if(by-affiliation)$
+  $elseif(by-author)$
+  <div>
+    <div class="quarto-title-meta-heading">$labels.authors$</div>
+    <div class="quarto-title-meta-contents">
+      $for(by-author)$
+      <p>$_title-meta-author.html()$</p>
+      $endfor$
+    </div>
+  </div>
+  $endif$
+
+  $if(date)$
+  <div>
+    <div class="quarto-title-meta-heading">$labels.published$</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">$date$</p>
+    </div>
+  </div>
+  $endif$
+
+  $if(date-modified)$
+  <div>
+    <div class="quarto-title-meta-heading">$labels.modified$</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date-modified">$date-modified$</p>
+    </div>
+  </div>
+  $endif$
+
+  $if(doi)$
+  <div>
+    <div class="quarto-title-meta-heading">$labels.doi$</div>
+    <div class="quarto-title-meta-contents">
+      <p class="doi">
+        <a href="https://doi.org/$doi$">$doi$</a>
+      </p>
+    </div>
+  </div>
+  $endif$
+
+  <div class="column has-text-centered">
+    <div class="publication-links">
+      $if(paper)$
+      <span class="link-block">
+        <a href=$paper$ class="external-link button is-normal is-rounded is-dark">
+          <span class="icon">
+            <i class="fa-solid fa-file-pdf"></i>
+          </span>
+          <span>Paper</span>
+        </a>
+      </span>
+      $endif$
+      $if(arxiv)$
+      <span class="link-block">
+        <a href=$arxiv$ class="external-link button is-normal is-rounded is-dark">
+          <span class="icon">
+            <i class="ai ai-arxiv"></i>
+          </span>
+          <span>arXiv</span>
+        </a>
+      </span>
+      $endif$
+      $if(youtube)$
+      <span class="link-block">
+        <a href=$youtube$ class="external-link button is-normal is-rounded is-dark">
+          <span class="icon">
+            <i class="fa-brands fa-youtube"></i>
+          </span>
+          <span>Video</span>
+        </a>
+      </span>
+      $endif$
+      $if(github)$
+      <span class="link-block">
+        <a href=$github$ class="external-link button is-normal is-rounded is-dark">
+          <span class="icon">
+            <i class="fa-brands fa-github"></i>
+          </span>
+          <span>Code</span>
+        </a>
+      </span>
+      $endif$
+    </div>
+  </div>
+</div>
+
+$if(abstract)$
+<div>
+  <div class="abstract">
+    <div class="block-title">$labels.abstract$</div>
+    $abstract$
+  </div>
+</div>
+$endif$
+
+$if(keywords)$
+<div>
+  <div class="keywords">
+    <div class="block-title">$labels.keywords$</div>
+    <p>$for(keywords)$$it$$sep$, $endfor$</p>
+  </div>
+</div>
+$endif$

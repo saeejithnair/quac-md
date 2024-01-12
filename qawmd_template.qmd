@@ -1,0 +1,97 @@
+---
+title: "DARLEI: Deep Accelerated Reinforcement Learning with Evolutionary Intelligence"
+format:
+  qaw-md-html: default
+author:
+  - name: Saeejith Nair
+    id: smnair
+    affiliation:
+      - ref: 1
+    url: https://www.saeejithnair.github.io/
+    corresponding: true
+  - name: Mohammad Javad Shafiee
+    id: mjshafiee
+    affiliation:
+      - ref: 1
+    url: https://vip.uwaterloo.ca/m-shafiee/
+  - name: Alexander Wong
+    id: a28wong
+    affiliation:
+      - ref: 1
+      - ref: 2
+    url: https://vip.uwaterloo.ca/a-wong/
+affiliations:
+  - id: 1
+    name: Vision and Image Processing Lab, University of Waterloo
+  - id: 2
+    name: Darwin AI, Waterloo
+description: "DARLEI is a framework that combines evolutionary algorithms with parallelized reinforcement learning for efficiently training and evolving populations of UNIMAL agents"
+abstract: >
+  We present DARLEI, a framework that combines evolutionary algorithms with parallelized reinforcement learning for efficiently training and evolving populations of UNIMAL agents. Our approach utilizes Proximal Policy Optimization (PPO) for individual agent learning and pairs it with a tournament selection-based generational learning mechanism to foster morphological evolution. By building on Nvidia's Isaac Gym, DARLEI leverages GPU accelerated simulation to achieve over 20x speedup using just a single workstation, compared to previous work which required large distributed CPU clusters. We systematically characterize DARLEI's performance under various conditions, revealing factors impacting diversity of evolved morphologies. For example, by enabling inter-agent collisions within the simulator, we find that we can simulate some multi-agent interactions between the same morphology, and see how it influences individual agent capabilities and long-term evolutionary adaptation. While current results demonstrate limited diversity across generations, we hope to extend DARLEI in future work to include interactions between diverse morphologies in richer environments, and create a platform that allows for coevolving populations and investigating emergent behaviours in them.
+github: https://github.com/saeejithnair/darlei
+arxiv: https://arxiv.org/abs/2312.05171
+paper: https://arxiv.org/pdf/2312.05171.pdf
+---
+
+<!-- You can include any preamble JavaScript or meta tags in a custom layout file -->
+
+<!-- ::: {.hero .section}
+::: {.hero-body}
+::: {.container .is-max-desktop}
+::: {.columns .is-centered}
+::: {.column .has-text-centered} -->
+<!-- # DARLEI: Deep Accelerated Reinforcement Learning with Evolutionary Intelligence {.title .is-1 .publication-title} -->
+
+<!-- ::: {.is-size-5 .publication-authors}
+- [Saeejith Nair](https://vip.uwaterloo.ca/s-nair/)<sup>1</sup>,
+- [Mohammad Javad Shafiee](https://vip.uwaterloo.ca/m-shafiee/)<sup>1</sup>,
+- [Alexander Wong](https://vip.uwaterloo.ca/a-wong/)<sup>1</sup>
+:::
+
+::: {.is-size-5 .publication-authors}
+<sup>1</sup>Vision and Image Processing Lab, University of Waterloo&ensp;
+:::
+
+::: {.column .has-text-centered}
+::: {.publication-links}
+- {{< fa file-pdf >}} [Paper](https://arxiv.org/pdf/2312.05171.pdf){.external-link .button .is-normal .is-rounded .is-dark}
+- {{< ai arxiv >}} [arXiv](https://arxiv.org/abs/2312.05171){.external-link .button .is-normal .is-rounded .is-dark}
+- {{< fa brands github >}} [Code](https://github.com/saeejithnair/darlei){.external-link .button .is-normal .is-rounded .is-dark}
+:::
+:::
+:::
+:::
+:::
+:::
+::: -->
+
+<!-- ## {#abstract .section}
+::: {.container .is-max-desktop}
+::: {.columns .is-centered .has-text-centered}
+::: {.column .is-four-fifths}
+### Abstract {.title .is-3} -->
+<!-- 
+We present DARLEI, a framework that combines evolutionary algorithms with parallelized reinforcement learning for efficiently training and evolving populations of UNIMAL agents. Our approach utilizes Proximal Policy Optimization (PPO) for individual agent learning and pairs it with a tournament selection-based generational learning mechanism to foster morphological evolution. [...]
+:::
+:::
+:::
+::: -->
+
+<!-- Footer section here -->
+<!-- ::: {#footer .footer}
+::: {.container}
+::: {.content .has-text-centered}
+- {{< fa file-pdf >}} [PDF](https://arxiv.org/pdf/2312.05171.pdf)
+- {{< fa brands github >}} [GitHub](https://github.com/saeejithnair/darlei)
+:::
+
+::: {.columns .is-centered}
+::: {.column .is-8}
+::: {.content}
+This website is built based on [Nerfies](https://github.com/nerfies/nerfies.github.io), and [DBARF](https://github.com/AIBluefisher/dbarf).
+:::
+:::
+:::
+:::
+:::
+ -->

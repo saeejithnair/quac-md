@@ -1,0 +1,21 @@
+title: Qaw-md
+version: 1.0.0
+quarto-required: ">=1.4.0"
+contributes:
+  formats:
+    html:
+      template: template.html
+      template-partials:
+        - title-block.html
+        - title-metadata.html
+        - _title-meta-author.html
+        - metadata.html
+        - toc.html
+        - styles.html
+      minimal: true
+      mainfont: ["Google Sans", 'sans-serif']
+      hide-description: true
+      theme: [custom.scss]
+      css: [ bulma.min.css, bulma-carousel.min.css, fontawesome.all.min.css, index.css]
+      format-resources:
+
